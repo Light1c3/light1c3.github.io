@@ -221,7 +221,9 @@ ul#nav li.current a { color: #4186A7; }
 }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
+  text-align: center;
    margin-top: 6px;
+   margin-bottom: 0px;
    background: #444;
 }
 #about .download .button:hover {
