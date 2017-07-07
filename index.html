@@ -19,6 +19,7 @@
   ================================================== -->
   <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/media-queries.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
 
@@ -26,6 +27,12 @@
   ================================================== -->
 	<script src="js/modernizr.js"></script>
 
+  <!-- Added Wow.js for animations -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -55,18 +62,18 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Elad Karni</h1>
-            <h3>
+            <h1 class="responsive-headline wow fadeInDown" data-wow-duration="1s">Elad Karni</h1>
+            <h3 class="wow fadeIn " data-wow-delay=".5s">
               A <span>programmer</span>, <span>game designer</span>, <span>photographer</span> and <span>IT Generalist</span> with more than 5 years of professional experience in the field.
               </br>
               Scroll or click to learn more <a class="smoothscroll" href="#about">about me</a>.
             </h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.facebook.com/Light1c3"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://plus.google.com/107963396612741818019/posts"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/elad-karni-5138b548"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.instagram.com/light1c3"><i class="fa fa-instagram"></i></a></li>
+            <hr class="wow fadeIn" data-wow-delay="1s"/>
+            <ul class="social wow ">
+               <li><a href="https://www.facebook.com/Light1c3"><i class="fa fa-facebook wow zoomIn" data-wow-delay="1s"></i></a></li>
+               <li><a href="https://plus.google.com/107963396612741818019/posts"><i class="fa fa-google-plus wow zoomIn" data-wow-delay="1.2s"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/elad-karni-5138b548"><i class="fa fa-linkedin wow zoomIn" data-wow-delay="1.4s"></i></a></li>
+               <li><a href="https://www.instagram.com/light1c3"><i class="fa fa-instagram wow zoomIn" data-wow-delay="1.6s"></i></a></li>
             </ul>
          </div>
       </div>
