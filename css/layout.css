@@ -284,7 +284,7 @@ ul#nav li.current a { color: #4186A7; }
 /*----------------------------------------------*/
 
 .bars {
-	width: 95%;
+	width: 100%;
 	float: left;
 	padding: 0;
 	text-align: left;
@@ -294,7 +294,7 @@ ul#nav li.current a { color: #4186A7; }
     list-style: none;
 }
 .bars li {
-   position: relative;
+    position: relative;
   	margin-bottom: 60px;
   	background: #ccc;
   	height: 42px;
@@ -325,33 +325,33 @@ ul#nav li.current a { color: #4186A7; }
 
 .react {
   	width: 70%;
-  	-moz-animation: react 2s ease;
-  	-webkit-animation: react 2s ease;
+  	-moz-animation: react 3s ease;
+  	-webkit-animation: react 3s ease;
 }
 .csharp {
   	width: 65%;
-  	-moz-animation: csharp 2s ease;
-  	-webkit-animation: csharp 2s ease;
+  	-moz-animation: csharp 3s ease;
+  	-webkit-animation: csharp 3s ease;
 }
 .xamarin {
   	width: 75%;
-  	-moz-animation: xamarin 2s ease;
-  	-webkit-animation: xamarin 2s ease;
+  	-moz-animation: xamarin 3s ease;
+  	-webkit-animation: xamarin 3s ease;
 }
 .javascript {
   	width: 90%;
-  	-moz-animation: javascript 2s ease;
-  	-webkit-animation: javascript 2s ease;
+  	-moz-animation: javascript 3s ease;
+  	-webkit-animation: javascript 3s ease;
 }
 .html5 {
   	width: 85%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: html5 3s ease;
+  	-webkit-animation: html5 3s ease;
 }
 .java {
   	width: 80%;
-  	-moz-animation: java 2s ease;
-  	-webkit-animation: java 2s ease;
+  	-moz-animation: java 3s ease;
+  	-webkit-animation: java 3s ease;
 }
 
 @-moz-keyframes react {
@@ -425,6 +425,7 @@ ul#nav li.current a { color: #4186A7; }
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
+   border-radius: 15px;
    background: #fff;
    overflow: hidden;
    position: relative;

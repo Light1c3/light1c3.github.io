@@ -116,6 +116,23 @@ $(window).scroll(function () {
 });
 */
 
+$(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+
+
+   if (wS > (hT+hH-wH)){
+     $('#scroll-to-react').addClass("bar-expand react");
+     $('#scroll-to-csharp').addClass("bar-expand csharp");
+     $('#scroll-to-xamarin').addClass("bar-expand xamarin");
+     $('#scroll-to-javascript').addClass("bar-expand javascript");
+     $('#scroll-to-html5').addClass("bar-expand html5");
+     $('#scroll-to-java').addClass("bar-expand java");
+   }
+});
+
 /*----------------------------------------------------*/
 /*	Modal Popup
 ------------------------------------------------------*/
