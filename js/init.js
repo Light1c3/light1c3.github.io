@@ -99,6 +99,24 @@
 
 
 /*----------------------------------------------------*/
+/*	Animation Scroll Trigger
+------------------------------------------------------*/
+
+/*
+$(window).scroll(function () {
+    $('.skill-bar').each(function () {
+          var imagePos = $(this).offset().top;
+          var imageHeight = $(this).height();
+          var topOfWindow = $(window).scrollTop();
+
+          if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+              $(this).addClass("bar-expand");
+          }
+    });
+});
+*/
+
+/*----------------------------------------------------*/
 /*	Modal Popup
 ------------------------------------------------------*/
 
