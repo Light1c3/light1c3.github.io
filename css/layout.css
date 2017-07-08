@@ -858,16 +858,17 @@ call-to-action .button {
 	background-color: #4186A7;
 }
 #contact button.submit {
+  width: 65%;
+  float: left;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
-   background: #0D0D0D;
+   background: #3e3a35;
 	border: none;
    cursor: pointer;
    height: auto;
    display: inline-block;
 	border-radius: 3px;
-   margin-left: 26%;
 }
 #contact button.submit:hover {
 	color: #0D0D0D;
