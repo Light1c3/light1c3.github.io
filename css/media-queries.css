@@ -283,7 +283,6 @@
    -------------------------------------------------------------------- */
    header .banner {
      padding-top: 24px;
-     height: 120vw;
    }
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;
