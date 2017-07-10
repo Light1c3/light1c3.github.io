@@ -62,23 +62,6 @@
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #resume .main-col { padding-right: 5%; }
 
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
-   #testimonials blockquote p {
-      font-size: 22px;
-      line-height: 46px;
-   }
-
-    /* Call to Action Section
-   ------------------------------------------------------------------- */
-   #call-to-action .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
 
    /* Contact Section
    ------------------------------------------------------------------- */
@@ -88,8 +71,6 @@
       line-height: 66px;
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
-
-
 }
 
 /* mobile wide/smaller tablets
@@ -250,12 +231,21 @@
      	margin-bottom: 6px;
       width: 100%;
    }
-   #contact button.submit { margin: 30px 0 24px 0; }
+   #contact widget {
+     background-color: red;
+   }
+   #contact button.submit {
+     margin: 30px 0 24px 0;
+     width: 100%;
+  }
    #message-warning, #message-success {
       width: 100%;
       margin-left: 0;
    }
 
+   #contactInfo {
+     display: none;
+   }
 
    /* footer
    ------------------------------------------------------------------------ */
@@ -291,7 +281,10 @@
 
    /* header styles
    -------------------------------------------------------------------- */
-   header .banner { padding-top: 24px; }
+   header .banner {
+     padding-top: 24px;
+     height: 100vw;
+   }
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;
       margin: 0 auto 24px auto;
@@ -304,6 +297,15 @@
    /* header social links */
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
+
+   /*
+   contact
+   ------------------------------------------------------------------------ */
+
+   /* form */
+   #contact button.submit {
+     width: 100%;
+   }
 
    /* footer
    ------------------------------------------------------------------------ */
