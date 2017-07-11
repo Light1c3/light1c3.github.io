@@ -6,6 +6,18 @@
 
  jQuery(document).ready(function($) {
 
+
+$(window).scroll(function() {
+
+  var wScroll = $(this).scrollTop();
+
+  $('.banner').css({
+    'transform' : 'translate(0px, ' + wScroll  / 6.5 + '%)'
+  });
+
+});
+
+
    /*----------------------------------------------------*/
    /* Banner OnLoad Display
    ------------------------------------------------------ */
