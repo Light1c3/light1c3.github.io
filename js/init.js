@@ -6,6 +6,14 @@
 
  jQuery(document).ready(function($) {
 
+   /*----------------------------------------------------*/
+   /* Banner OnLoad Display
+   ------------------------------------------------------ */
+
+   $('.banner').ready(function(){
+       $('.banner').css("display", "inline-block");
+   });
+
 /*----------------------------------------------------*/
 /* FitText Settings
 ------------------------------------------------------ */
@@ -102,20 +110,6 @@
 /*	Animation Scroll Trigger
 ------------------------------------------------------*/
 
-/*
-$(window).scroll(function () {
-    $('.skill-bar').each(function () {
-          var imagePos = $(this).offset().top;
-          var imageHeight = $(this).height();
-          var topOfWindow = $(window).scrollTop();
-
-          if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-              $(this).addClass("bar-expand");
-          }
-    });
-});
-*/
-
 $(window).scroll(function() {
    var hT = $('#scroll-to').offset().top,
        hH = $('#scroll-to').outerHeight(),
@@ -131,6 +125,7 @@ $(window).scroll(function() {
      $('#scroll-to-html5').addClass("bar-expand html5");
      $('#scroll-to-java').addClass("bar-expand java");
    }
+
 });
 
 /*----------------------------------------------------*/

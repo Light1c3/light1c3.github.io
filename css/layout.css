@@ -43,12 +43,13 @@ header:before {
    height: 100%;
 }
 header .banner {
-   display: inline-block;
+   display: none;
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
    padding-bottom: 30px;s
    text-align: center;
+
 }
 
 header .banner-text { width: 100%; }
