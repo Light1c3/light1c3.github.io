@@ -870,6 +870,7 @@ call-to-action .button {
    cursor: pointer;
    height: auto;
    display: block;
+   outline: none;
 	border-radius: 3px;
 }
 #contact button.submit:hover {

@@ -179,8 +179,8 @@ $(window).scroll(function() {
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
-
+   $('.submit').click(function() {
+     
       $('#image-loader').fadeIn();
 
       var contactName = $('#contactForm #contactName').val();
