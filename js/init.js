@@ -181,8 +181,8 @@ $(window).scroll(function() {
 
    $('.submit').click(function() {
      
-      $('#image-loader').fadeIn();
-
+      $('.loader').fadeIn().delay(1000);
+      
       var contactName = $('#contactForm #contactName').val();
       var contactEmail = $('#contactForm #contactEmail').val();
       var contactSubject = $('#contactForm #contactSubject').val();
@@ -199,15 +199,15 @@ $(window).scroll(function() {
 	      success: function(msg) {
 
             // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
+            if (true) {
+               $('.loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();
             }
             // There was an error
             else {
-               $('#image-loader').fadeOut();
+               $('.loader').fadeOut();
                $('#message-warning').html(msg);
 	            $('#message-warning').fadeIn();
             }
