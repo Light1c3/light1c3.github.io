@@ -6,16 +6,16 @@
 
  jQuery(document).ready(function($) {
 
+    var bLazy = new Blazy();
+    $(window).scroll(function() {
 
-$(window).scroll(function() {
+    var wScroll = $(this).scrollTop();
 
-  var wScroll = $(this).scrollTop();
+    $('.banner').css({
+        'transform' : 'translate(0px, ' + wScroll  / 6.5 + '%)'
+    });
 
-  $('.banner').css({
-    'transform' : 'translate(0px, ' + wScroll  / 6.5 + '%)'
-  });
-
-});
+    });
 
 
    /*----------------------------------------------------*/

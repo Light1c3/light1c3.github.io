@@ -17,21 +17,11 @@
 
 	<!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/default.min.css">
+	<link rel="stylesheet" href="css/layout.min.css">
 
   <!-- Script
   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-  <!-- Added Wow.js for animations -->
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 
    <!-- Favicons
 	================================================== -->
@@ -312,7 +302,7 @@
                       <div class="item-wrap">
 
                          <a href="#modal-01" title="">
-                            <img alt="" src="images/portfolio/time-visualizer.JPG">
+                            <img data-src="images/portfolio/time-visualizer.JPG" class="b-lazy" alt="" src="images/blazyloader.gif">
                             <div class="overlay">
                                <div class="portfolio-item-meta">
               					      <h5>Time Visualizer</h5>
@@ -331,11 +321,11 @@
                       <div class="item-wrap">
 
                          <a href="#modal-02" title="">
-                            <img alt="" src="images/portfolio/signin-app.JPG">
+                            <img data-src="images/portfolio/synclist.png" class="b-lazy" alt="" src="images/blazyloader.gif">
                             <div class="overlay">
                                <div class="portfolio-item-meta">
-              					      <h5>Signin App</h5>
-                              <p>React-Native</p>
+              					      <h5>Sync-List</h5>
+                              <p>React PWA</p>
 
               					   </div>
                             </div>
@@ -350,7 +340,7 @@
                         <div class="item-wrap">
 
                            <a href="#modal-03" title="">
-                              <img alt="" src="images/portfolio/resume-app.jpg">
+                              <img data-src="images/portfolio/resume-app.jpg" class="b-lazy" alt="" src="images/blazyloader.gif">
                               <div class="overlay">
                                  <div class="portfolio-item-meta">
                                  <h5>Navite Resume App</h5>
@@ -368,7 +358,7 @@
                       <div class="item-wrap">
 
                          <a href="#modal-04" title="">
-                            <img alt="" src="images/portfolio/swimmingfrog.jpg">
+                            <img data-src="images/portfolio/swimmingfrog.jpg" class="b-lazy" alt="" src="images/blazyloader.gif">
                             <div class="overlay">
                                <div class="portfolio-item-meta">
                               <h5>Swimming Frog</h5>
@@ -392,7 +382,7 @@
 
          <div id="modal-01" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-timevisualizer.JPG" alt="" />
+		      <img class="scale-with-grid b-lazy" src="images/portfolio/modals/m-timevisualizer.JPG" alt="" />
 
 		      <div class="description-box">
 			      <h4>Time Visualizer</h4>
@@ -410,12 +400,12 @@
 
          <div id="modal-02" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-signinapp.JPG" alt="" />
+		      <img class="scale-with-grid b-lazy" src="images/portfolio/modals/m-synclist.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Signin App</h4>
-			      <p>My first attempt at making a mobile application using react native. After a bit of trouble getting the environment set up, the rest of the process was fairly painless. You can checkout the repo at <a href=https://github.com/Light1c3/Signin-App target="_blank">GitHub Repo<a/>  </p>
-               <span class="categories"><i class="fa fa-tag"></i>React-Native</span>
+			      <h4>Sync List</h4>
+			      <p>This is a PWA I've created useing React.js and Firebase that allows users to login and share lists with their friends &amp; family. It is used for making lists when multiple people need to coordinate for an event and allows you to see who is bringing what, so you can put an end to the agrument of "you said you were bring..."!</p>
+               <span class="categories"><i class="fa fa-tag"></i>React, Firebase</span>
 		      </div>
 
             <div class="link-box">
@@ -426,7 +416,7 @@
 
          <div id="modal-03" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-resumeapp.jpg" alt="" />
+		      <img class="scale-with-grid b-lazy" src="images/portfolio/modals/m-resumeapp.jpg" alt="" />
 
 		      <div class="description-box">
 			      <h4>Navite Resume App</h4>
@@ -442,7 +432,7 @@
 
          <div id="modal-04" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-swimmingfrog.jpg" alt="" />
+		      <img class="scale-with-grid b-lazy" src="images/portfolio/modals/m-swimmingfrog.jpg" alt="" />
 
 		      <div class="description-box">
 			      <h4>Swimming Frog</h4>
@@ -509,7 +499,7 @@
 
                   <div>
                      <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea data-gramm_editor="false" cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                   </div>
 
 					</fieldset>
@@ -581,17 +571,30 @@
 
    </footer> <!-- Footer End-->
 
-   <!-- Java Script
+   <!-- CSS None Esential =========================== -->
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- JavaScript
    ================================================== -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+   <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+   <script type="text/javascript" src="js/waypoints.js"></script>
+   <script type="text/javascript" src="js/jquery.fittext.js"></script>
+   <script type="text/javascript" src="js/magnific-popup.js"></script>
+   <script type="text/javascript" src="js/init.js"></script>
+   <script type="text/javascript" src="js/modernizr.js"></script>
+   <script type="text/javascript" src="js/wow.min.js"></script>
+
+   <!-- Added Wow.js for animations -->
+   <script>
+     new WOW().init();
+   </script>
 
 </body>
 
